@@ -181,25 +181,14 @@
       }
 
       .result{
-        background: #feffff; /* Old browsers */
-        background: -moz-linear-gradient(top, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#ddf1f9), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* IE10+ */
-        background: linear-gradient(to bottom, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
-
-        opacity: 0.7;
-        -webkit-border-radius: 35px;
-        -moz-border-radius: 35px;
-        border-radius: 35px;
+        background-image: url('sketched-circle.png');
+        background-repeat: no-repeat;
       }
     </style>
   </head>
   <body>
     <div class='infographic'>
-      <img src="2205-File-Persona-IG-FNL.jpg" class='infographic-1'/>
+      <img src="2205-File-Persona-IG-FNL.jpg" class='infographic-1' usemap='#infographic-img'/>
       <input type='radio' name='info1' value='a' class='info-radio-1-a info_radio' onclick="check_result()"/>
       <input type='radio' name='info1' value='b' class='info-radio-1-b info_radio' onclick="check_result()"/>
       <input type='radio' name='info2' value='a' class='info-radio-2-a info_radio' onclick="check_result()"/>
@@ -221,6 +210,18 @@
       <div id='info_result_a'></div>
       <div id='info_result_b'></div>
     </div>
+
+    <map name="infographic-img">
+      <area  alt="Data Sheet" title="" href="http://www8.hp.com/h20195/V2/GetDocument.aspx?docname=4AA5-5170ENW&cc=us&lc=en" shape="rect" coords="23,2519,94,2625" style="outline:none;" target="_blank"     />
+      <area  alt="Meet the Innovators" title="" href="http://bcove.me/hzxtavti" shape="rect" coords="100,2529,186,2640" style="outline:none;" target="_blank"     />
+      <area  alt="Analyst white paper" title="" href="http://www8.hp.com/h20195/V2/GetDocument.aspx?docname=4AA5-5869ENW&cc=us&lc=en" shape="rect" coords="191,2514,267,2639" style="outline:none;" target="_blank"     />
+      <area  alt="Technology validation" title="" href="http://bcove.me/hzxtavti" shape="rect" coords="272,2535,361,2636" style="outline:none;" target="_blank"     />
+      <area  alt="Data sheet" title="" href="http://www8.hp.com/h20195/V2/GetDocument.aspx?docname=4AA5-8769ENW&cc=us&lc=en" shape="rect" coords="433,2517,503,2625" style="outline:none;" target="_blank"     />
+      <area  alt="Customer case study" title="" href="http://www8.hp.com/h20195/v2/GetDocument.aspx?docname=4AA5-5131ENW&cc=us&lc=en" shape="rect" coords="544,2518,614,2638" style="outline:none;" target="_blank"     />
+      <area  alt="Analyst white paper" title="" href="http://h20195.www2.hp.com/V2/GetDocument.aspx?docname=4AA5-6485ENW&cc=us&lc=en" shape="rect" coords="655,2518,726,2637" style="outline:none;" target="_blank"     />
+      <area  alt="Learn More" title="" href="http://www.hp.com/go/3PARFileServices" shape="rect" coords="287,2822,505,2895" style="outline:none;" target="_blank"     />
+      <area shape="rect" coords="790,2965,792,2967" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+    </map>
   </body>
 
   <script type='text/javascript'>
