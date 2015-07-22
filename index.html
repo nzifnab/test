@@ -6,7 +6,7 @@
     </title>
 
     <style type='text/css'>
-      /* http://meyerweb.com/eric/tools/css/reset/ 
+      /* http://meyerweb.com/eric/tools/css/reset/
          v2.0 | 20110126
          License: none (public domain)
       */
@@ -20,8 +20,8 @@
       dl, dt, dd, ol, ul, li,
       fieldset, form, label, legend,
       table, caption, tbody, tfoot, thead, tr, th, td,
-      article, aside, canvas, details, embed, 
-      figure, figcaption, footer, header, hgroup, 
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
       menu, nav, output, ruby, section, summary,
       time, mark, audio, video {
         margin: 0;
@@ -32,7 +32,7 @@
         vertical-align: baseline;
       }
       /* HTML5 display-role reset for older browsers */
-      article, aside, details, figcaption, figure, 
+      article, aside, details, figcaption, figure,
       footer, header, hgroup, menu, nav, section {
         display: block;
       }
@@ -66,28 +66,186 @@
       .infographic{
         width: 792px;
         position: relative;
+        margin-bottom: 25px;
       }
 
       .infographic-1{
-        height: 882px;
-        background-image: url('2205-File-Persona-IG-v1c.gif');
+        height: 2967px;
+        /*background-image: url('2205-File-Persona-IG-FNL.jpg');*/
       }
 
       .info-radio-1-a{
-        left: 293px;
-        top: 809px;
+        left: 158px;
+        top: 643px;
       }
 
       .info-radio-1-b{
-        left: 492px;
-        top: 809px;
+        left: 158px;
+        top: 695px;
+      }
+
+      .info-radio-2-a{
+        left: 467px;
+        top: 643px;
+      }
+
+      .info-radio-2-b{
+        left: 467px;
+        top: 695px;
+      }
+
+      .info-radio-3-a{
+        left: 499px;
+        top: 936px;
+      }
+
+      .info-radio-3-b{
+        left: 499px;
+        top: 972px;
+      }
+
+      .info-radio-4-a{
+        left: 62px;
+        top: 875px;
+      }
+
+      .info-radio-4-b{
+        left: 62px;
+        top: 929px;
+      }
+
+      .info-radio-5-a{
+        left: 185px;
+        top: 1184px;
+      }
+
+      .info-radio-5-b{
+        left: 185px;
+        top: 1222px;
+      }
+
+      .info-radio-6-a{
+        left: 465px;
+        top: 1128px;
+      }
+
+      .info-radio-6-b{
+        left: 465px;
+        top: 1200px;
+      }
+
+      .info-radio-7-a{
+        left: 493px;
+        top: 1441px;
+      }
+
+      .info-radio-7-b{
+        left: 493px;
+        top: 1483px;
+      }
+
+      .info-radio-8-a{
+        left: 140px;
+        top: 1441px;
+      }
+
+      .info-radio-8-b{
+        left: 140px;
+        top: 1484px;
+      }
+
+      .info-radio-9-a{
+        left: 159px;
+        top: 1668px;
+      }
+
+      .info-radio-9-b{
+        left: 158px;
+        top: 1709px;
+      }
+
+      #info_result_a{
+        position: absolute;
+        left: 161px;
+        top: 1860px;
+        width: 73px;
+        height: 70px;
+      }
+
+      #info_result_b{
+        position: absolute;
+        left: 559px;
+        top: 1860px;
+        width: 70px;
+        height: 71px;
+      }
+
+      .result{
+        background: #feffff; /* Old browsers */
+        background: -moz-linear-gradient(top, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feffff), color-stop(35%,#ddf1f9), color-stop(100%,#a0d8ef)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+
+        opacity: 0.7;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
       }
     </style>
   </head>
   <body>
-    <div class='infographic infographic-1'>
-      <input type='radio' name='info1' value='a' class='info-radio-1-a'/>
-      <input type='radio' name='info1' value='b' class='info-radio-1-b'/>
+    <div class='infographic'>
+      <img src="2205-File-Persona-IG-FNL.jpg" class='infographic-1'/>
+      <input type='radio' name='info1' value='a' class='info-radio-1-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info1' value='b' class='info-radio-1-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info2' value='a' class='info-radio-2-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info2' value='b' class='info-radio-2-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info3' value='a' class='info-radio-3-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info3' value='b' class='info-radio-3-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info4' value='a' class='info-radio-4-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info4' value='b' class='info-radio-4-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info5' value='a' class='info-radio-5-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info5' value='b' class='info-radio-5-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info6' value='a' class='info-radio-6-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info6' value='b' class='info-radio-6-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info7' value='a' class='info-radio-7-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info7' value='b' class='info-radio-7-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info8' value='a' class='info-radio-8-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info8' value='b' class='info-radio-8-b info_radio' onclick="check_result()"/>
+      <input type='radio' name='info9' value='a' class='info-radio-9-a info_radio' onclick="check_result()"/>
+      <input type='radio' name='info9' value='b' class='info-radio-9-b info_radio' onclick="check_result()"/>
+      <div id='info_result_a'></div>
+      <div id='info_result_b'></div>
     </div>
   </body>
+
+  <script type='text/javascript'>
+    var check_result;
+
+    check_result = function() {
+      var counts, element, _i, _len, _ref;
+      counts = {
+        a: 0,
+        b: 0
+      };
+      _ref = document.getElementsByClassName("info_radio");
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        element = _ref[_i];
+        if (element.checked) {
+          counts[element.value] += 1;
+        }
+      }
+      document.getElementById("info_result_a").className = "";
+      document.getElementById("info_result_b").className = "";
+      if (counts.a > counts.b) {
+        return document.getElementById("info_result_a").className = "result";
+      } else if (counts.b > counts.a) {
+        return document.getElementById("info_result_b").className = "result";
+      }
+    };
+  </script>
 </html>
