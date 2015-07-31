@@ -67,125 +67,131 @@
       }
 
       .infographic{
-        width: 792px;
+        width: 1296px;
+        /*width: 80%;*/
         position: relative;
         margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .infographic-1{
-        height: 2967px;
-        /*background-image: url('2205-File-Persona-IG-FNL.jpg');*/
+        width: 100%;
       }
 
       .info-radio-1-a{
-        left: 158px;
-        top: 643px;
+        left: 19.95%;
+        top: 21.67%;
       }
 
       .info-radio-1-b{
-        left: 158px;
-        top: 695px;
+        left: 19.95%;
+        top: 23.42%;
       }
 
       .info-radio-2-a{
-        left: 467px;
-        top: 643px;
+        left: 58.96%;
+        top: 21.67%;
       }
 
       .info-radio-2-b{
-        left: 467px;
-        top: 695px;
+        left: 58.96%;
+        top: 23.42%;
       }
 
       .info-radio-3-a{
-        left: 499px;
-        top: 936px;
+        left: 63.01%;
+        top: 31.55%;
       }
 
       .info-radio-3-b{
-        left: 499px;
-        top: 972px;
+        left: 63.01%;
+        top: 32.76%;
       }
 
       .info-radio-4-a{
-        left: 62px;
-        top: 875px;
+        left: 7.83%;
+        top: 29.49%;
       }
 
       .info-radio-4-b{
-        left: 62px;
-        top: 929px;
+        left: 7.83%;
+        top: 31.31%;
       }
 
       .info-radio-5-a{
-        left: 185px;
-        top: 1184px;
+        left: 23.36%;
+        top: 39.91%;
       }
 
       .info-radio-5-b{
-        left: 185px;
-        top: 1222px;
+        left: 23.36%;
+        top: 41.19%;
       }
 
       .info-radio-6-a{
-        left: 465px;
-        top: 1128px;
+        left: 58.71%;
+        top: 38.02%;
       }
 
       .info-radio-6-b{
-        left: 465px;
-        top: 1200px;
+        left: 58.71%;
+        top: 40.44%;
       }
 
       .info-radio-7-a{
-        left: 493px;
-        top: 1441px;
+        left: 62.25%;
+        top: 48.57%;
       }
 
       .info-radio-7-b{
-        left: 493px;
-        top: 1483px;
+        left: 62.25%;
+        top: 49.98%;
       }
 
       .info-radio-8-a{
-        left: 140px;
-        top: 1441px;
+        left: 17.68%;
+        top: 48.57%;
       }
 
       .info-radio-8-b{
-        left: 140px;
-        top: 1484px;
+        left: 17.68%;
+        top: 50.02%;
       }
 
       .info-radio-9-a{
-        left: 159px;
-        top: 1668px;
+        left: 20.08%;
+        top: 56.22%;
       }
 
       .info-radio-9-b{
-        left: 158px;
-        top: 1709px;
+        left: 20.08%;
+        top: 57.60%;
       }
 
       #info_result_a{
         position: absolute;
-        left: 161px;
-        top: 1860px;
-        width: 73px;
-        height: 70px;
+
+        display: none;
+        left: 20.33%;
+        top: 62.69%;
+        width: 9.22%;
+        height: 2.36%;
       }
 
       #info_result_b{
         position: absolute;
-        left: 559px;
-        top: 1860px;
-        width: 70px;
-        height: 71px;
+
+        display: none;
+        left: 70.58%;
+        top: 62.69%;
+        width: 8.84%;
+        height: 2.39%;
       }
 
-      .result{
-        background-image: url('sketched-circle.png');
-        background-repeat: no-repeat;
+      #info_result_a.result, #info_result_b.result{
+        position: absolute;
+        display: block;
       }
     </style>
   </head>
@@ -210,8 +216,8 @@
       <input type='radio' name='info8' value='b' class='info-radio-8-b info_radio' onclick="check_result()"/>
       <input type='radio' name='info9' value='a' class='info-radio-9-a info_radio' onclick="check_result()"/>
       <input type='radio' name='info9' value='b' class='info-radio-9-b info_radio' onclick="check_result()"/>
-      <div id='info_result_a'></div>
-      <div id='info_result_b'></div>
+      <img id='info_result_a' src='sketched-circle.png'></img>
+      <img id='info_result_b' src='sketched-circle.png'></img>
     </div>
 
     <map name="infographic-img">
